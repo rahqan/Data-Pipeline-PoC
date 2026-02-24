@@ -1,0 +1,47 @@
+transaction_id	varchar(100)
+merchant_id	bigint
+customer_id	bigint
+transaction_timestamp	timestamp
+processed_timestamp	timestamp
+payment_method	int
+transaction_status	int
+currency	int
+gross_amount	decimal(12,2)
+discount_amount	decimal(12,2)
+tax_amount	decimal(12,2)
+net_amount	decimal(12,2)
+refund_amount	decimal(12,2)
+emi_enabled	tinyint(1)
+emi_tenure_months	int
+emi_interest_rate	decimal(5,2)
+gateway_response	json
+transaction_metadata	json
+created_at	timestamp
+updated_at	timestamp
+
+
+
+{
+    "gateway_fee": 28.91,
+    "gateway_name": "Auropay",
+    "gateway_status": "success",
+    "gateway_message": "Payment processed successfully",
+    "gateway_timestamp": "2025-09-25T09:38:45",
+    "gateway_retry_count": 0,
+    "gateway_transaction_id": "auropay_ec22cae37dde44ea"
+}
+{
+    "card_type": null,
+    "is_online": false,
+    "card_brand": null,
+    "ip_address": null,
+    "risk_score": 9,
+    "user_agent": null,
+    "device_type": null,
+    "card_last_four": null,
+    "payment_channel": "in_store",
+    "discount_applied": 154.08,
+    "payment_latitude": 19.08727703,
+    "payment_longitude": 72.84226186,
+    "processing_time_ms": 2626
+}
